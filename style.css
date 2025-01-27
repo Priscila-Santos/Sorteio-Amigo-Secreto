@@ -1,0 +1,241 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #28A745; /* Verde para o botão cadastrar */
+    --color-button-hover: #218838; /* Verde escuro para hover */
+    --color-button-secondary: #FFA500; /* Laranja para o botão sorteios */
+    --color-button-secondary-hover: #CC8400; /* Laranja escuro para hover */
+    --color-modal-background: #fefefe;
+    --color-modal-button: #17a2b8; /* Cor do botão no modal */
+    --color-modal-button-hover: #138496; /* Hover para o botão no modal */
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px; /* Adiciona espaço inferior para evitar corte */
+    overflow-y: auto; /* Adiciona rolagem vertical */
+}
+
+/* Banner */
+.header-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary); /* Adiciona fundo para visibilidade */
+    padding: 20px 0;
+}
+
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+    white-space: nowrap; /* Evita que o texto seja cortado */
+    overflow: hidden; /* Esconde o texto que ultrapassar o container */
+    text-overflow: ellipsis; /* Adiciona elipses ao texto cortado */
+}
+
+/* Seção de entrada */
+.input-section {
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Aumenta a largura máxima */
+    margin-top: 20px; /* Espaço para o título */
+}
+
+/* Títulos */
+.section-title .visually-hidden {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; /* Aumenta o espaço entre os inputs */
+    margin-top: 20px;
+}
+
+.input-name, .input-age, .input-hobbies, .input-photo, .input-address, .input-draw, .input-id {
+    flex: 1 1 calc(50% - 20px); /* Ajusta o tamanho para 50% menos o gap */
+    padding: 15px; /* Aumenta o padding */
+    border: 2px solid #000;
+    border-radius: 25px;
+    font-size: 18px; /* Aumenta a fonte */
+    margin-bottom: 20px; /* Adiciona margem inferior para evitar sobreposição */
+}
+
+.button-add, .button-draw {
+    padding: 15px 30px; /* Aumenta o tamanho do botão */
+    font-size: 18px; /* Aumenta a fonte */
+    border: 2px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    color: var(--color-white); /* Texto branco */
+}
+
+.button-add {
+    background-color: var(--color-button);
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+}
+
+.button-draw {
+    background-color: var(--color-button-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-secondary-hover);
+}
+
+.button-draw img {
+    margin-right: 10px;
+}
+
+.name-list, .result-list {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    max-width: 800px; /* Aumenta a largura máxima */
+    text-align: center;
+}
+
+.name-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--color-tertiary);
+}
+
+.name-list button {
+    background-color: red;
+    color: var(--color-white);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.result-list {
+    color: #05DF05;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Escurece o fundo */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: var(--color-modal-background);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Aumenta o tamanho do modal */
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Merriweather', serif; /* Muda a font-family */
+    gap: 20px; /* Aumenta o gap entre os elementos */
+    display: flex;
+    flex-direction: column; /* Garante que os elementos estejam em coluna */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.foto-sorteado {
+    width: 150px; /* Aumenta a foto */
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0; /* Adiciona margem superior e inferior */
+}
+
+.modal-content p {
+    font-size: 18px; /* Aumenta a fonte das informações */
+}
+
+.modal-content button {
+    background-color: var(--color-modal-button); /* Cor do botão no modal */
+    font-family: 'Inter', sans-serif; /* Muda a font-family do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: var(--color-white);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+.modal-content button:hover {
+    background-color: var(--color-modal-button-hover);
+}
