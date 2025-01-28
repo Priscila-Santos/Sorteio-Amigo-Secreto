@@ -184,6 +184,12 @@ body {
     padding-top: 60px;
 }
 
+#modalSorteio {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .modal-content {
     background-color: var(--color-modal-background);
     margin: 5% auto;
@@ -197,13 +203,19 @@ body {
     gap: 20px; /* gap entre os elementos */
     display: flex;
     flex-direction: column; /* Garante que os elementos estejam em coluna */
+    position: relative;
 }
-
+/* Estilo para o botão de fechar 'X' */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    color: #000;
+    /* float: right; */
+    font-size: 2.625rem;
     font-weight: bold;
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    cursor: pointer;
+
 }
 
 .close:hover,
