@@ -68,7 +68,7 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
-    max-width: 800px; /* Aumenta a largura máxima */
+    max-width: 800px; 
     margin-top: 20px; /* Espaço para o título */
 }
 
@@ -88,22 +88,22 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 20px; /* Aumenta o espaço entre os inputs */
+    gap: 20px; /* espaço entre os inputs */
     margin-top: 20px;
 }
 
 .input-name, .input-age, .input-hobbies, .input-photo, .input-address, .input-draw, .input-id {
-    flex: 1 1 calc(50% - 20px); /* Ajusta o tamanho para 50% menos o gap */
-    padding: 15px; /* Aumenta o padding */
+    flex: 1 1 calc(50% - 20px); 
+    padding: 15px; 
     border: 2px solid #000;
     border-radius: 25px;
-    font-size: 18px; /* Aumenta a fonte */
+    font-size: 18px; 
     margin-bottom: 20px; /* Adiciona margem inferior para evitar sobreposição */
 }
 
 .button-add, .button-draw {
-    padding: 15px 30px; /* Aumenta o tamanho do botão */
-    font-size: 18px; /* Aumenta a fonte */
+    padding: 15px 30px; /* tamanho do botão */
+    font-size: 18px; 
     border: 2px solid #000;
     border-radius: 25px;
     cursor: pointer;
@@ -144,7 +144,7 @@ body {
     margin: 20px 0;
     padding: 0;
     width: 100%;
-    max-width: 800px; /* Aumenta a largura máxima */
+    max-width: 800px; 
     text-align: center;
 }
 
@@ -180,7 +180,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4); /* Escurece o fundo */
+    background-color: rgba(0, 0, 0, 0.4); /* cor de fundo */
     padding-top: 60px;
 }
 
@@ -190,11 +190,11 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 600px; /* Aumenta o tamanho do modal */
+    max-width: 600px; /* tamanho do modal */
     border-radius: 15px;
     text-align: center;
-    font-family: 'Merriweather', serif; /* Muda a font-family */
-    gap: 20px; /* Aumenta o gap entre os elementos */
+    font-family: 'Merriweather', serif; 
+    gap: 20px; /* gap entre os elementos */
     display: flex;
     flex-direction: column; /* Garante que os elementos estejam em coluna */
 }
@@ -214,19 +214,19 @@ body {
 }
 
 .foto-sorteado {
-    width: 150px; /* Aumenta a foto */
+    width: 150px; /* tamanho da foto */
     height: 150px;
     border-radius: 50%;
-    margin: 20px 0; /* Adiciona margem superior e inferior */
+    margin: 20px 0; /* margem superior e inferior */
 }
 
 .modal-content p {
-    font-size: 18px; /* Aumenta a fonte das informações */
+    font-size: 18px; /*  fonte das informações */
 }
 
 .modal-content button {
-    background-color: var(--color-modal-button); /* Cor do botão no modal */
-    font-family: 'Inter', sans-serif; /* Muda a font-family do botão */
+    background-color: var(--color-modal-button); 
+    font-family: 'Inter', sans-serif; 
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
