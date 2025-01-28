@@ -16,7 +16,7 @@ Esta aplicação é uma plataforma para gerenciar participantes e realizar sorte
 - **JavaScript**: Funcionalidade e lógica da aplicação.
 - **LocalStorage**: Armazenamento dos dados localmente no navegador.
 
-## Regras de Negócio da Aplicação de Amigo Secreto
+## Regras de Negócio da Aplicação
 
 ### Funcionalidades Principais
 #### 1. **Carregar Participantes**
