@@ -72,12 +72,11 @@ Fecha o modal de sorteio.
 Atualiza as opções de sorteio no modal.
 
 ## Gif da Aplicação
-[![Assista ao GIF](/assets/gif/gif-do-app.gif)]
+![Assista ao GIF](/assets/gif/gif-do-app.gif)
 
 ## Explicação da aplicação no YouTube
 
-[![Assista ao vídeo](https://i9.ytimg.com/vi_webp/EeTtMjJniDI/mq2.webp?sqp=CKTG4bwG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCUgNih_MA8=&rs=AOn4CLCq-QLfqEiITkiW4RR29J7uuHttPg)](https://youtu.be/EeTtMjJniDI
-)
+[Assista ao vídeo](https://youtu.be/EeTtMjJniDI)
 
 
 ## Contribuição
